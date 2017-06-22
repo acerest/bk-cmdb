@@ -89,20 +89,20 @@ define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 * user define
 */
 
-define('BASE_URL', 'http://open.bk.com');
+define('BASE_URL', 'http://rick.lu');
 define('LOGIN_URL', BASE_URL.'/account/login');
 define('DEFAULT_APP_NAME', '资源池');
 define('DEFAULT_SET_NAME', '空闲机池');
 define('DEFAULT_MODULE_NAME', '空闲机');
-define('STATIC_URL', '');
+define('STATIC_URL', BASE_URL);
 
 define('MIN_PASSWORD_LENGTH', 4);
 define('DEFAULT_PASSWORD', 'blueking');
 // 公司名称
-define('COMPANY_NAME', '公司名称');
+define('COMPANY_NAME', 'rick');
 define('COMPANY_ID', 0);
 //cc token写入的域名
-define('COOKIE_DOMAIN', '.bk.com');
+define('COOKIE_DOMAIN', '.rick.lu');
 
 //js、css版本号
 define('STATIC_VERSION', '2016030701');

@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = '';
-$config['upload_path'] = APPPATH.'/resource/upload/';
+$config['base_url'] = '/var/www/html/bk-cmdb';
+$config['upload_path'] = APPPATH . '/resource/upload/';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -30,7 +30,7 @@ $config['upload_path'] = APPPATH.'/resource/upload/';
 |
 */
 $config['index_page'] = 'index.php';
-$config['time_zone']=date_default_timezone_set('Asia/Shanghai');
+$config['time_zone'] = date_default_timezone_set('Asia/Shanghai');
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
@@ -46,7 +46,7 @@ $config['time_zone']=date_default_timezone_set('Asia/Shanghai');
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
+$config['uri_protocol'] = 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ $config['url_suffix'] = '.html';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language'] = 'english';
 
 /*
 |--------------------------------------------------------------------------
@@ -222,7 +222,7 @@ $config['log_threshold'] = 3;
 | application/logs/ directory. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = '';
+$config['log_path'] = $config['base_url'] . '/data/log/';
 
 /*
 |--------------------------------------------------------------------------
@@ -359,7 +359,7 @@ $config['encryption_key'] = 'bkcmdb';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = $config['base_url'] . '/data/session';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -380,11 +380,11 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+$config['cookie_prefix'] = '';
+$config['cookie_domain'] = '';
+$config['cookie_path'] = '/';
+$config['cookie_secure'] = FALSE;
+$config['cookie_httponly'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------

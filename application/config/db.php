@@ -64,11 +64,11 @@ $query_builder = TRUE;
 
 $db['default_development'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1:3306',
+	'hostname' => '127.0.0.1',
 	'username' => 'root',
-	'password' => '',
+	'password' => 'qwerasdf',
 	'database' => 'cmdb',
-	'dbdriver' => 'mysql',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => 'cc_',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
