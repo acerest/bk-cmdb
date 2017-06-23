@@ -21,8 +21,8 @@
                         <span>step 1：请选择您的业务类型</span><i></i>
                     </div>
                     <div class="c-panel-content">
-                        <div name="c-button-game">游戏</div>
-                        <div name="c-button-notgame" class="c-button-notgame">非游戏<img src="<?php echo STATIC_URL; ?>/static/img/second.jpg"/></div>
+                        <div name="c-button-game">三级拓扑</div>
+                        <div name="c-button-notgame" class="c-button-notgame">二级拓扑<img src="<?php echo STATIC_URL; ?>/static/img/second.jpg"/></div>
                         <i class="clearfix"></i>
                     </div>
                 </div>
@@ -33,11 +33,11 @@
             <div class="col-sm-12 col-lg-12">
                 <div class="c-panel panelMark c-panel-pageTwo mb30">
                     <div class="c-panel-header">
-                        <span>step2：您的游戏是分区分服还是全区全服？</span><i></i>
+                        <span>step2：您的业务是三级拓扑还是二级拓扑？</span><i></i>
                     </div>
                     <div class="c-panel-content">
-                        <div name="c-button-fqff" class="c-button-fqff">分区分服<img src="<?php echo STATIC_URL; ?>/static/img/third.jpg"/></div>
-                        <div name="c-button-qqqf" class="c-button-qqqf">全区全服<img src="<?php echo STATIC_URL; ?>/static/img/second.jpg"/></div>
+                        <div name="c-button-fqff" class="c-button-fqff">三级<img src="<?php echo STATIC_URL; ?>/static/img/third.jpg"/></div>
+                        <div name="c-button-qqqf" class="c-button-qqqf">二级<img src="<?php echo STATIC_URL; ?>/static/img/second.jpg"/></div>
                         <i class="clearfix"></i>
                     </div>
                 </div>

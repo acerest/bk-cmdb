@@ -458,11 +458,13 @@ class Host extends Cc_Controller {
 		$header = $hostPropertykeyName;
 		$this->load->logic('UserCustomLogic');
 		$userCustomCon = $this->UserCustomLogic->getUserCustom();
+        $userCustomColumn = '';
 		if(isset($userCustomCon['DefaultCon']) && $userCustomCon['DefaultCon']) {
 			$userCustomCon = json_decode($userCustomCon['DefaultCon'], true);
 		}else {
 			$userCustomCon = array_keys($header);
 			$data['DefaultCon'] = json_encode($userCustomCon);
+			$data['DefaultColumn'] = json_encode($userCustomColumn);
 			$this->UserCustomLogic->setUserCustomByUserName($data);
 		}
 
